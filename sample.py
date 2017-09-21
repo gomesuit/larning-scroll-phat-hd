@@ -1,14 +1,12 @@
 #!/usr/bin/env python
 
 import time
-import unicodedata
 import signal
 
 import scrollphathd
 from scrollphathd.fonts import font5x7
 
-text = u'      Hello World!'
-text = unicodedata.normalize('NFKD', text).encode('ascii', 'ignore')
+text = '      Hello World!'
 
 scrollphathd.clear()
 scrollphathd.show()
